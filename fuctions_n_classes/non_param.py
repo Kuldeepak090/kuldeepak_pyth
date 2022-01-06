@@ -1,3 +1,4 @@
+# function should not print and take input inside its code block
 def check_prime():
     a = 541
     for i in range(2,a):
