@@ -1,3 +1,4 @@
+# count the sum of words with limited num of chars
 def word_counter(msg,limit):
     words = msg.split()
     wl = []
