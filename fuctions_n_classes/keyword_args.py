@@ -4,5 +4,7 @@ def product_prices(**products):
     print(f"total prices:${sum(products.vlues())}")    
     print(products)
 
-product_prices(maggi= 50,mouse =2300)
-product_prices(maggi= 67)    
+product_prices(maggi= 50,mouse =2300, coffe = 399)
+product_prices(maggi= 50 , coffee =399)    
+
+print(range(300))
