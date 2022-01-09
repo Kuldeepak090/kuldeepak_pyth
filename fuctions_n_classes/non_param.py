@@ -6,6 +6,11 @@ def check_prime():
             print("not a prime")
             break
     else:
-         print("prime")   
+         print("prime")  
+
+   # non professional
+   # check_prime() 
+    
+   # proffesional      
 if __name__ == "__main__" :
     check_prime()                      
