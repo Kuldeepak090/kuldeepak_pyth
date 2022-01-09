@@ -7,7 +7,7 @@ def totavg():
    avg= total/len(x)
    return total,avg
 
-t,a =totavg()
+t,a =totavg() # the number of var depends upon the number of values return
 print(f'the total is {t} and average is {a}')   
 
 
