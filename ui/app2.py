@@ -7,13 +7,13 @@ class MyApp(QtWidgets.QMainWindow):
         super(MyApp,self).__init__()
         uic.loadUi('ui/untitled.ui',self)
         #interaction  
-        self.PushButton.clicked.connect(self.update_ui)
-        self.PushButton_2.clicked.connect(self.update_ui)
+        self.pushButton.clicked.connect(self.update_ui)
+        self.pushButton_2.clicked.connect(self.update_ui)
 
-def update_ui(self):
-    self.output.setText('RED')   
-def update_ui(self):
-    self.output.setText('green')    
+    def update_ui(self):
+        self.output.setText('RED')   
+    def update_ui(self):
+        self.output.setText('green')    
 
 app = QtWidgets.QApplication(sys.argv)
 window = MyApp()
