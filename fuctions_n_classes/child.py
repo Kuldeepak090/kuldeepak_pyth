@@ -11,9 +11,9 @@ class mango(fruit):
 
 
 if __name__ =="__main__":
-    m1 = mango('mango','large','oval',color ='yellow') 
+    m1 = mango('mango','sweet','large','oval',color ='yellow') 
     m1.set_variety('alphonso')
-    m2 = mango('mango','medium','oval',color ='yellow')    
+    m2 = mango('mango','sweet','small','oval',color ='yellow')    
     m2.set_variety('dhassheri')  
 
 
