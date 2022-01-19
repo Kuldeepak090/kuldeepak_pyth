@@ -98,7 +98,7 @@
      <string>Save</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="bkList">
     <property name="geometry">
      <rect>
       <x>20</x>
