@@ -1,8 +1,8 @@
-from email.policy import default
+
 from sqlalchemy import create_engine
 from sqlalchemy import Column, Integer, String, DateTime
 from sqlalchemy.ext.declarative import declarative_base
-from datetime import date, datetime
+from datetime import  datetime 
 
 
 # basic setup
