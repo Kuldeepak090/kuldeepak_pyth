@@ -1,4 +1,4 @@
-from turtle import title
+
 from PyQt5 import QtWidgets, uic
 import sys
 from mydb import Books, create_engine
@@ -19,15 +19,15 @@ class MyApp(QtWidgets.QMainWindow):
         return Session()
 
     def add_new_book(self):
-        title = self.rditTitle.text() 
-        rating = self.rditRating.text() 
+        title = self.editTitle.text() 
+        rating = self.editRating.text() 
         if len(title) >= 3:
             db = self.opendb()
             b= Books(title=title,rating=int(rating))
             db.add(b)
             db.commit()
             db.close()
-            self.statusBar.showMessage("Book Saved to Db")
+            self.statusBar().showMessage("Book Saved to Db")
             self.editTitle.setText("")
             self.editRating.setValue(5)
             self.display_books()
@@ -41,7 +41,7 @@ class MyApp(QtWidgets.QMainWindow):
         bklist = ""
         for item in books:
             bklist += f'{item.id}. {item.title} {item.rating}\n' 
-        self.bookList.setText(bklist) 
+        self.bkList.setText(bklist) 
         db.close()           
        
 app = QtWidgets.QApplication(sys.argv)
