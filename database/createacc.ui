@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>631</width>
-    <height>530</height>
+    <width>629</width>
+    <height>499</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -39,7 +39,7 @@ background:qlineargradient(spread:pad, x1:0.091, y1:0.102, x2:0.991, y2:0.977, s
      <string notr="true">font: 36pt &quot;MS Shell Dlg 2&quot;;color:rgb(255, 255, 255)</string>
     </property>
     <property name="text">
-     <string>Login</string>
+     <string>Sign up</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -55,14 +55,14 @@ background:qlineargradient(spread:pad, x1:0.091, y1:0.102, x2:0.991, y2:0.977, s
      <string notr="true">font: 16pt &quot;MS Shell Dlg 2&quot;;color:rgb(255, 255, 255)</string>
     </property>
     <property name="text">
-     <string>Sign in to your existing account</string>
+     <string>Register a brand new account</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="login">
+   <widget class="QPushButton" name="signup">
     <property name="geometry">
      <rect>
       <x>180</x>
-      <y>340</y>
+      <y>390</y>
       <width>301</width>
       <height>41</height>
      </rect>
@@ -74,7 +74,7 @@ background-color: rgb(0, 255, 255);
 </string>
     </property>
     <property name="text">
-     <string>Log in</string>
+     <string>Sign up</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="emailfield">
@@ -137,11 +137,11 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>Password</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="error">
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>300</y>
+      <y>360</y>
       <width>261</width>
       <height>16</height>
      </rect>
@@ -151,6 +151,36 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="confirmpasswordfield">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>320</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>300</y>
+      <width>104</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Confirm Password</string>
     </property>
    </widget>
   </widget>
