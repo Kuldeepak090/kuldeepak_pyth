@@ -18,7 +18,7 @@ class Welcomescreen(QDialog):
     def __init__(self):
 
         super(Welcomescreen, self).__init__()
-        loadUi('database/welcomescreen.ui', self)
+        loadUi('welcomescreen.ui', self)
         self.login.clicked.connect(self.gotologin)
 
     def gotologin(self):
@@ -31,7 +31,7 @@ class Login(QDialog):
 
     def __init__(self):
         super(Login, self).__init__()
-        loadUi('database/Login.ui', self)
+        loadUi('Login.ui', self)
         self.passwordfield.setEchoMode(QtWidgets.QLineEdit.Password)
         self.login.clicked.connect(self.loginfunction)
 
@@ -43,14 +43,16 @@ class Login(QDialog):
             self.error.setText("Please input all fields")
 
         else:
-            conn = sqlite3.connect("shop_data.db")
+            conn = sqlite3.connect("shop.sqlite")
             cur = conn.cursor()
             cur = conn.cursor()
-            qurey = 'SELECT password FROM login_info WHERE username =\ '' +user+ "\"'
+            qurey = f'''SELECT password FROM login_info WHERE username = '{user}' '''
+            print(qurey) 
             cur.execute(qurey)
-            result_pass = cur.fetchone([0])
+            result_pass = cur.fetchone()
+            print(result_pass)
 
-            if result_pass == password:
+            if result_pass[0] == password:
                 print("Sucessfully logged in.")
                 self.error.setText("")
             else:
@@ -61,7 +63,7 @@ class SplashScreen(QSplashScreen):
 
     def __init__(self):
         super(QSplashScreen, self).__init__()
-        uic.loadUi('database/welcome.ui', self)
+        uic.loadUi('welcome.ui', self)
         self.setWindowFlag(Qt.FramelessWindowHint)
         #pixmap = QPixmap("bg.jpg.jpg")
         # self.setPixmap(pixmap)
@@ -81,7 +83,7 @@ class SplashScreen(QSplashScreen):
 class MainPage(QDialog):
     def __init_(self):
         super(QDialog, self).__init__()
-        uic.loadUi('database/Login', self)
+        uic.loadUi('Login', self)
 
 
 if __name__ == '__main__':
