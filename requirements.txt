@@ -7,3 +7,5 @@ opencv-contrib-python
 streamlit
 pillow
 textblob
+selenium
+webdriver-manager
