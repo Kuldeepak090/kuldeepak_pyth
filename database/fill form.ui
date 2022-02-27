@@ -140,10 +140,10 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QLabel" name="error">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>80</x>
       <y>360</y>
-      <width>261</width>
-      <height>16</height>
+      <width>461</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -225,7 +225,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>Gender</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="Male">
+   <widget class="QRadioButton" name="male">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -238,7 +238,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <string>Male</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="Female">
+   <widget class="QRadioButton" name="female">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -249,6 +249,22 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Female</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="error_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>370</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;color:red;</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>
